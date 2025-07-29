@@ -1,5 +1,7 @@
 import React from 'react'
 import img from "../../assets/result.png"
+import { TbBaselineDensityMedium } from "react-icons/tb";
+
 
 function Headers() {
   return (
@@ -8,7 +10,7 @@ function Headers() {
         <div className="image w-[80px] mr-12">
             <img className='w-[100%]' src={img} alt="" />
         </div>
-        <div className="collection flex-1">
+        <div className="collection flex-1 max-[900px]:hidden">
             <ul className='flex gap-8 '>
                 <li>
                     <a className='uppercase' href="#">about</a>
@@ -27,7 +29,10 @@ function Headers() {
                 </li>
             </ul>
         </div>
-        <div className="botton flex gap-5">
+        <div className="botton flex gap-5 items-center">
+        <div className="hidden max-[900px]:block mr-[30px]">
+        < TbBaselineDensityMedium />
+        </div>
             <button className='px-[40px] font-bold text-white py-[6px] rounded-[9px] bg-emerald-500'>Sign in</button>
             <button className='px-[40px] font-bold text-white py-[6px] rounded-[9px] bg-emerald-500'>Sign Up</button>
         </div>

@@ -13,7 +13,7 @@ function Product() {
 
   let limit = 10;
   useEffect(() => {
-    setLoding(false);
+    setLoding(true);
     axios
       .get("https://fakestoreapi.com/products", { params: { limit } })
       .then((res) => {
@@ -25,13 +25,13 @@ function Product() {
       .finally(() => {
         setLoding(false);
       });
-  }, []);
+  },[]);
 
   return (
     <div className=" mt-[100px]">
       {error && <Errorwidget />}
       {loading && <Loading count={limit} />}
-      <div className="container mx-auto  flex flex-wrap justify-between gap-[30px]">
+      <div className="container mx-auto  flex flex-wrap justify-between gap-[30px] max-[1291px]:justify-around max-[1291px]: gap-5">
         {data?.map((item) => (
           <div  
             onClick={()=> setPopap(item)}
