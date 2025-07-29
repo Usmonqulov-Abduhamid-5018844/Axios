@@ -57,11 +57,11 @@ function Product() {
       </div>
         {popapData && (
           <Popap onClose={() => setPopap(null)}>
-              <div className="cards w-[1200px] h-[600px] bg-white flex p-[20px] gap-5 rounded-2xl">
+              <div className="cards w-[1200px] h-[600px] bg-white flex p-[20px] gap-5 rounded-2xl max-[1280px]:w-[900px] max-[1280px]:h-[500px] max-[950px]:w-[700px] max-[950px]:h-[450px] max-[700px]:h-[350px] max-[700px]:w-[380px]">
                 <div className="w-[50%]">
                   <img className="h-[100%] w-[100%]" src={popapData.image} alt="" />
                 </div>
-                <div className="pt-[20px] overflow-y-auto flex flex-col gap-3 w-[50%] h-[70%] justify-center my-auto ">
+                <div className="pt-[20px] overflow-y-auto flex flex-col gap-3 w-[50%] h-[70%] justify-center my-auto   max-[1000px]:pt-[60px]">
                    <span className="font-bold text-[25px]">{popapData.title}</span> 
                    <strong className="text-[20px]">${popapData.price} USD</strong>
                    <b className="text-[25px]">{popapData.category}</b>

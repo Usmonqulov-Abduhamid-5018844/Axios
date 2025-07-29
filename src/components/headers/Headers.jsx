@@ -7,7 +7,7 @@ function Headers() {
   return (
     <div className='container '>
     <div className="navbar flex items-center">
-        <div className="image w-[80px] mr-12">
+        <div className="image w-[80px] mr-12 max-[420px]:w-[60px]  max-[420px]:mr-10">
             <img className='w-[100%]' src={img} alt="" />
         </div>
         <div className="collection flex-1 max-[900px]:hidden">
@@ -29,7 +29,7 @@ function Headers() {
                 </li>
             </ul>
         </div>
-        <div className="hidden max-[900px]:block mr-[30px] flex-1">
+        <div className="hidden max-[900px]:block mr-[30px] flex-1 max-[420px]:mr-[20px]">
         < TbBaselineDensityMedium />
         </div>
         <div className="botton flex gap-5 items-center">
