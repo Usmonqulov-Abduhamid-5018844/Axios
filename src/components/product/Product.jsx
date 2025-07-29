@@ -35,7 +35,7 @@ function Product() {
         {data?.map((item) => (
           <div  
             onClick={()=> setPopap(item)}
-            className=" border-2 border-amber-200 rounded-lg  overflow-hidden w-[400px] p-[16px] flex flex-col gap-[25px]"
+            className=" border-2 border-amber-200 rounded-lg  overflow-hidden w-[400px] p-[16px] flex flex-col gap-[25px] max-[860px]:w-[90%]"
             key={item.id}
           >
             <dir className="w-[100%] h-[350px] flex ">
