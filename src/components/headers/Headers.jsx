@@ -29,12 +29,12 @@ function Headers() {
                 </li>
             </ul>
         </div>
-        <div className="botton flex gap-5 items-center">
-        <div className="hidden max-[900px]:block mr-[30px]">
+        <div className="hidden max-[900px]:block mr-[30px] flex-1">
         < TbBaselineDensityMedium />
         </div>
-            <button className='px-[40px] font-bold text-white py-[6px] rounded-[9px] bg-emerald-500'>Sign in</button>
-            <button className='px-[40px] font-bold text-white py-[6px] rounded-[9px] bg-emerald-500'>Sign Up</button>
+        <div className="botton flex gap-5 items-center">
+            <button className='max-[520px]:px-[20px] max-[520px]:py-[4px]  px-[40px] font-bold text-white py-[6px] rounded-[9px] bg-emerald-500'>Sign in</button>
+            <button className='max-[520px]:px-[20px] max-[520px]:py-[4px] px-[40px] font-bold text-white py-[6px] rounded-[9px] bg-emerald-500'>Sign Up</button>
         </div>
     </div>
 </div>
